@@ -1,0 +1,137 @@
+{
+  "webpack": "5.112.2",
+  "node": "v22.23.4",
+  "control": true,
+  "update": {
+    "before": "cdba367798bcac03f4ab",
+    "after": "b17b0df7b67a2c062ba3",
+    "updated": [
+      "./dep.js",
+      "./page.js"
+    ],
+    "status": "idle"
+  },
+  "actual": 2,
+  "expected": 2,
+  "builds": [
+    {
+      "label": "initial",
+      "hash": "cdba367798bcac03f4ab",
+      "entries": {
+        "main": [
+          "main.js"
+        ]
+      },
+      "chunks": [
+        {
+          "id": "main",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "./index.js"
+          ]
+        },
+        {
+          "id": "page",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./page.js"
+          ]
+        },
+        {
+          "id": "other",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./dep.js",
+            "./other.js"
+          ]
+        }
+      ],
+      "manifests": {}
+    },
+    {
+      "label": "loaded page acquires dep",
+      "hash": "b17b0df7b67a2c062ba3",
+      "entries": {
+        "main": [
+          "main.js",
+          "main.cdba367798bcac03f4ab.hot-update.js"
+        ]
+      },
+      "chunks": [
+        {
+          "id": "main",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "./index.js"
+          ]
+        },
+        {
+          "id": "page",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./dep.js",
+            "./page.js"
+          ]
+        },
+        {
+          "id": "other",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./dep.js",
+            "./other.js"
+          ]
+        }
+      ],
+      "manifests": {
+        "main.cdba367798bcac03f4ab.hot-update.json": {
+          "c": [
+            "main",
+            "page"
+          ],
+          "r": [],
+          "m": [],
+          "css": {
+            "r": [
+              "main",
+              "page"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "webpack": "5.112.2",
+  "node": "v22.23.4",
+  "control": false,
+  "update": {
+    "before": "d05b3013dd37a20a675a",
+    "error": "Cannot find module './dep.js'",
+    "status": "fail"
+  },
+  "actual": 1,
+  "expected": 2,
+  "builds": [
+    {
+      "label": "initial",
+      "hash": "d05b3013dd37a20a675a",
+      "entries": {
+        "main": [
+          "main.js"
+        ]
+      },
+      "chunks": [
+        {
+          "id": "main",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "./index.js"
+          ]
+        },
+        {
+          "id": "page",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./page.js"
+          ]
+        },
+        {
+          "id": "other",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./other.js"
+          ]
+        },
+        {
+          "id": "shared",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./dep.js"
+          ]
+        }
+      ],
+      "manifests": {}
+    },
+    {
+      "label": "loaded page acquires dep",
+      "hash": "1dfe1093af2a4d34f4b9",
+      "entries": {
+        "main": [
+          "main.js",
+          "main.d05b3013dd37a20a675a.hot-update.js"
+        ]
+      },
+      "chunks": [
+        {
+          "id": "main",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "./index.js"
+          ]
+        },
+        {
+          "id": "page",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./page.js"
+          ]
+        },
+        {
+          "id": "other",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./other.js"
+          ]
+        },
+        {
+          "id": "shared",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./dep.js"
+          ]
+        }
+      ],
+      "manifests": {
+        "main.d05b3013dd37a20a675a.hot-update.json": {
+          "c": [
+            "main",
+            "page"
+          ],
+          "r": [],
+          "m": [],
+          "css": {
+            "r": [
+              "main",
+              "page"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
